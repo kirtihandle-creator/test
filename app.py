@@ -79,13 +79,7 @@ async def register_user(user: User):
         "age": user.age
     }
 
-@app.get("/register")
-async def get_registered_users():
-  
-    return {
-        "message": "This endpoint would return registered users.",
-        "users": registered_users
-    }
+
 
 
 
