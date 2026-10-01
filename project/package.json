@@ -1,0 +1,19 @@
+{
+  "name": "clinic-task-board",
+  "version": "1.0.0",
+  "description": "Tiny Clinic Task Board demo app used as a QA agent test target",
+  "main": "src/server.js",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node src/server.js",
+    "reset-db": "node src/reset-db.js",
+    "test": "node --test test/smoke.test.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.5.0",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
